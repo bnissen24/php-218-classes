@@ -13,12 +13,12 @@
 
 
 
-	class UserDB 
+	class UsersDB 
 	{
 	    public static function getUsers() 
 	    {
 	        $db = Database::getDB();
-	        $query = 'SELECT * FROM accounts'
+	        $query = 'SELECT * FROM accounts';
 	        $statement = $db->prepare($query);
 	        $statement->execute();
 	        
@@ -75,7 +75,6 @@
 		}
 
 	}
-}
 ?>
 
 
